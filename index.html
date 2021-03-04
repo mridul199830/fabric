@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fabric.js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button onclick="toggleMode(modes.pan)">toggle pan</button><br><br>
+    <button onclick="toggleMode(modes.drawing)">toggle Drawing</button><br><br>
+    Color: <input id="colorPicker" value="#000000" data-jscolor="">
+    <button onclick="clearCanvas(canvas)">clear</button><br><br>
+    <canvas id="canvas"></canvas>
+
+    <div class="buttonobjects">
+        <p id="objectTitle">Objects</p>
+        <button onclick="createRect(canvas)">rect</button>
+        <button onclick="createCer(canvas)">cer</button>
+    </div>
+    
+
+    <script src="jscolor.js"></script>
+    <script src="fabric.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
